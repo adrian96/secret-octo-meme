@@ -2,9 +2,129 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
 </head>
 <body>
+<header class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <!--<span class="glyphicon glyphicon-chevron-down"></span>-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=" .navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <table>
+                <tr>
+                    <td><a class="navbar-brand" href="index.html">Matthew Silverlane</a></td>
+                </tr>
+            </table>
+        </div>
 
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="primary"><a href="index.html">Startseite</a></li>
+                <li class="sep"></li>
+                <li class="primary"><a href="projekte.html">Projekte</a></li>
+                <li class="sep"></li>
+                <li class="primary"><a href="referenzen.html">Referenzen</a></li>
+                <li class="sep"></li>
+                <li class="primary"><a href="gallerie.html">Gallerie</a></li>
+                <li class="sep"></li>
+                <li class="primary active"><a href="kontakt.html">Kontakt</a></li>
+                <li class="sep"></li>
+                <li class="primary"><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section id="body" class="container col-md-offset-1 col-md-10">
+    <div class="page-header"><h2>Kontakt</h2></div>
+    <p>Für zusätzliche Informationen oder Anfragen können Sie hier dieses Formular verwenden.</p>
+
+    <div class="formular col-md-offset-0 col-md-5">
+        <form>
+            <div class="formgroup">
+                <label for="inputtext">Name</label>
+
+                <div class="input-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </span>
+                    <input type="text"
+                           name="inputname"
+                           id="inputtext"
+                           required
+                           placeholder="Dein Name"
+                           class="form-control"/>
+
+                </div>
+            </div>
+            <div class="formgroup">
+
+                <label for="inputemail">Email</label>
+
+                <div class="input-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                        </span>
+                    <input type="email" name="inputemail" id="inputemail" required placeholder="Deine Email"
+                           class="form-control"/>
+                </div>
+                <div class="formgroup">
+                    <label for="inputselect">Grund</label>
+                    <select name="inputselect" id="inputselect" class="form-control">
+                        <option>-</option>
+                        <option>Projektanfrage</option>
+                        <option>Information</option>
+                        <option>Beschwerde</option>
+                        <option>Anderes</option>
+                    </select>
+                </div>
+                <div class="formgroup">
+                    <label for="inputtextarea">Message</label>
+                    <textarea cols="40" rows="6" class="form-control" id="inputtextarea" name="inputtextarea"
+                              placeholder="Deine Nachricht"></textarea>
+                </div>
+                <input type="submit" value="Submit" class="btn-success"/>
+            </div>
+        </form>
+    </div>
+
+    <h4>Adresse</h4>
+
+    <div>
+        <address>
+            M.S.A <br/>
+            Kunsthausgasse 93/10<br/>
+            1010 Wien<br/>
+            <abbr title="Phone">Telefon:</abbr>
+            +43 660/ 589 6410
+        </address>
+    </div>
+</section>
+</section>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
