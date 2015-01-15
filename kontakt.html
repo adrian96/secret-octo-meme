@@ -2,9 +2,203 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+
+    <title>Matthew Silverlane</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+
+
 </head>
 <body>
+<header class="container">
+    <br />
+    <br />
+    <ol class="breadcrumb">
+        <li><a href="index.html">Startseite</a> </li>
+        <li>Kontakt</li>
+    </ol>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=" .navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <table>
+                <tr>
+                    <td><a class="navbar-brand" href="index.html">Matthew Silverlane</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="primary"><a href="index.html">Startseite</a></li>
+                <li class="sep"></li>
+                <li class="primary"><a href="projekte.html">Projekte</a></li>
+                <li class="sep"></li>
+                <li class="primary"><a href="referenzen.html">Referenzen</a></li>
+                <li class="sep"></li>
+                <li class="primary"><a href="gallerie.html">Gallerie</a></li>
+                <li class="sep"></li>
+                <li class="primary active"><a href="kontakt.html">Kontakt</a></li>
+                <li class="sep"></li>
+                <li class="primary"><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section id="body" class="container col-md-offset-1 col-md-10" style="padding-bottom: 50px;">
+    <div class="page-header"><span style="color: #2a8c85;"><h2>Kontakt</h2></span></div>
+    <p>Für zusätzliche Informationen oder Anfragen können Sie hier dieses Formular verwenden.</p>
+    <br>
+
+    <div class="formular col-md-offset-0 col-md-5">
+        <form>
+            <div class="formgroup">
+                <label for="inputtext">Name</label>
+
+                <div class="input-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </span>
+                    <input type="text"
+                           name="inputname"
+                           id="inputtext"
+                           required
+                           placeholder="Dein Name"
+                           class="form-control"/>
+
+                </div>
+            </div>
+            <div class="formgroup">
+
+                <label for="inputemail">Email</label>
+
+                <div class="input-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                        </span>
+                    <input type="email" name="inputemail" id="inputemail" required placeholder="Deine Email"
+                           class="form-control"/>
+                </div>
+                <div class="formgroup">
+                    <label for="inputselect">Grund</label>
+                    <select name="inputselect" id="inputselect" class="form-control">
+                        <option>-</option>
+                        <option>Projektanfrage</option>
+                        <option>Information</option>
+                        <option>Beschwerde</option>
+                        <option>Anderes</option>
+                    </select>
+                </div>
+                <div class="formgroup">
+                    <label for="inputtextarea">Message</label>
+                    <textarea cols="40" rows="6" class="form-control" id="inputtextarea" name="inputtextarea"
+                              placeholder="Deine Nachricht"></textarea>
+                </div>
+                <br>
+                <input class="btn btn-default" type="submit" value="Senden" />
+            </div>
+        </form>
+    </div>
+
+    <div class="col-md-3">
+        <span style="color: #2a8c85;"><h4>Adresse</h4></span>
+
+        <div>
+            <address>
+                M.S.A <br/>
+                Kunsthausgasse 93/10<br/>
+                1010 Wien<br/>
+                <abbr title="Phone">Telefon:</abbr>
+                +43 660/ 589 6410
+            </address>
+            <address>
+                <strong>Support:</strong> sprt@gmail.com<br/>
+                <strong>Marketing:</strong> skiz@gmx.at
+            </address>
+        </div>
+    </div>
+
+    <section class="col-md-4">
+        <span style="color: #2a8c85;"><h4>Finde uns auch auf:</h4></span>
+        <ul class="list-group">
+            <li class="list-group-item" onclick="count()">
+                Facebook<a href="www.facebook.com/MSA"></a>
+                <span id="demo" class="badge">21497</span>
+            </li>
+            <li class="list-group-item" onclick="count1()">
+                Twitter<a href="www.twitter.com/MSA"></a>
+                <span id="demo1" class="badge">8826</span>
+            </li>
+            <li class="list-group-item" onclick="count2()">
+                Flickr<a href="www.flickr/MSA"></a>
+                <span id="demo2" class="badge">3452</span>
+            </li>
+            <li class="list-group-item" onclick="count3()">
+                Pintarest<a href="www.pintarest.com/MSA"></a>
+                <span id="demo3" class="badge">4214</span>
+            </li>
+        </ul>
+    </section>
+    </section>
+
+<div class="col-md-12 hidden-sm hidden-xs" style="background-color: #2a8c85; height: 280px; color: #3bccc5; padding-top: 25px;">
+    <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-4">
+            <span style="color: #fff;"><h3>Men&uuml;</h3></span>
+            <p>
+                <a href="">Startseite</a><br />
+                <a href="">Projekte</a><br />
+                <a href="">Referenzen</a><br />
+                <a href="">Gallerie</a><br />
+                <a href="">Kontakt</a><br />
+                <a href="">Impressum</a>
+            </p>
+        </div>
+        <div class="col-md-4">
+            <span style="color: #fff;"><h3>Kontakt</h3></span>
+            <p>
+                M.S.A<br />
+                Kunsthausgasse 93/10<br />
+                1010 Wien<br />
+                Telefon: +43 660/ 589 6410<br /><br />
+                Support: sprt@gmail.com<br />
+                Marketing: skiz@gmx.at
+            </p>
+        </div>
+        <div class="col-md-4">
+            <span style="color: #fff;"><h3>Impressum</h3></span>
+            <p>
+                Alle Inhalte dieser Website inklusive der Gestaltung und Programmierung unterliegen dem Urheberrecht (Copyright). Alle Rechte und &Auml;nderungen für Silverlane sind vorbehalten.<br /><br />&copy;2014 Design by Silverlane
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/meinscript.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
